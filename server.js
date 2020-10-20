@@ -8,12 +8,13 @@ const app = express();
 
 app.use(logger("dev"));
 
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.use(express.static("public"));
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout"
 
-mongoose.connect("mongodb://localhost/workout", {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useFindAndModify: false
 });
