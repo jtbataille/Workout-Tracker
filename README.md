@@ -1,57 +1,41 @@
-# Unit 17 Nosql Homework: Workout Tracker
+# Workout Tracker
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-For this assignment, you'll create a workout tracker. You have already been provided with the front end code in the `Develop` folder. This assignment will require you to create Mongo database with a Mongoose schema and handle routes with Express.
+## Table of Contents
+* [Description](#description)
+* [Installation](#installation)
+* [Technologies Used](#technologies-used)
+* [Application Demo](#application-demo)
+* [Contact Information](#contact-information)
 
-## User Story
+## Description
+This workout tracker application will allow users to create and track their daily workouts as we could all use a little reminder to stay on track! Users can log multiple exercises per workout, tracking each exercise's name, type, weight, sets, reps, and duration. For cardio workouts, users can track the distance travelled for consistency and self-betterment.
 
-* As a user, I want to be able to view create and track daily workouts. I want to be able to log multiple exercises in a workout on a given day. I should also be able to track the name, type, weight, sets, reps, and duration of exercise. If the exercise is a cardio exercise, I should be able to track my distance traveled.
+## Installation
+This application is deployed on [Heroku](#) so that users can start tracking their workouts right away.
 
-## Business Context
+Alternatively, users may clone this repository and use the following commands to make begin the application, entering them in an integrated terminal within the main directory:
 
-A consumer will reach their fitness goals more quickly when they track their workout progress.
+* ```npm install```
 
-## Acceptance Criteria
+After installing these packages to make sure the application functions, users should enter:
 
-When the user loads the page, they should be given the option to create a new workout or continue with their last workout.
+* ```node server.js```
 
-The user should be able to:
+This final command will make the app listen on the LocalHost PORT.
 
-  * Add exercises to a previous workout plan.
+If following these commands, users should open their own browsers and go the following address to see the deployed application:
 
-  * Add new exercises to a new workout plan.
+> localhost:8080
 
-  * View the combined weight of multiple exercises on the `stats` page.
+## Technologies Used
+HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Mongoose, Morgan
 
-To deploy an application with a MongoDB database to Heroku, you'll need to set up a MongoDB Atlas account and connect a database from there to your application. Be sure to use the following guides for support:
+## Application Demo
+-----------------------------------
 
-  * [Set Up MongoDB Atlas](../important/MongoAtlas-Setup.md)
-
-  * [Deploy with Heroku and MongoDB Atlas](../important/MongoAtlas-Deploy.md)
-
-## Commit Early and Often
-
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for the following two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills.
-
-2. Your commit history allows you to revert your codebase in the event that you need to return to a previous state.
-
-Follow these guidelines for committing:
-
-* Make single-purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits.
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history.
-
-* Don't commit half-done work, for the sake of your collaborators (and your future self!).
-
-* Test your application before you commit to ensure functionality at every step in the development process.
-
-We want you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* The URL to the deployed application
-
-* The URL to the GitHub repository
+## Contact Information
+* Jarrod Bataille
+  * Portfolio Webpage: https://jtbataille.github.io/
+  * GitHub Profile: https://github.com/jtbataille
+  * E-mail Address: jtbataille@gmail.com
