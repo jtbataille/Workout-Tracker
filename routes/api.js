@@ -4,7 +4,7 @@ const Workout = require("../models/workout.js");
 // Creates a brand new workout
 router.post("/api/workouts", (req, res) => {
   Workout.create(req.body)
-    .then(dbWorkout =>{
+    .then(dbWorkout => {
       res.json(dbWorkout);
     })
     .catch(err => {
@@ -20,14 +20,20 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
       { new: true }
   )
   .then(dbWorkout => res.json(dbWorkout))
-  .catch((err) => {
+  .catch(err => {
     res.status(400).json(err);
   });
 });
 
 // Finds the last workout
 router.get("/api/workouts", (req, res) => {
-  Workout.find();
+  Workout.find()
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
 });
 
 // Pulls all workouts and makes charts
