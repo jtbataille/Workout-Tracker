@@ -32,7 +32,25 @@ If following these commands, users should open their own browsers and go the fol
 HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Mongoose, Morgan
 
 ## Application Demo
------------------------------------
+When starting the application for the first time, users will see a screen without any workout information; however, when users create a workout with various exercises, they will see a screen allowing them to view stats from their last workout and the options to either *"Continue Workout"* by adding more exercises to their last workout or *"New Workout"* to begin a completely new workout:
+
+![startpage](public/assets/images/startpage.png)
+
+If users click *"Continue Workout,"* they will be taken to a page to add an exercise to their workout--either resistance or cardio--with the specifications they choose for each. Clicking *"Complete"* will take the users back to the homepage; clicking *"Add Exercise"* will allow users to continue adding to the same workout:
+
+![continueworkout](public/assets/images/continueWorkout.png)
+
+If users click *"New Workout,"* users will be able to create an entirely new workout that will register as a new entry in the database, keeping the data straight-forward for busy people! Much like the *"Continue Workout"* button, users have the option to click *"Complete"* after adding their exercise, bringing them back to the homepage, or clicking *"Add Exercise,"* which will allow them to add another exercise to fit within this one workout in the database:
+
+![newworkout](public/assets/images/newWorkout.png)
+
+After entering a few exercises, users may choose to select the **Dashboard** option from the Navigation Bar to see their Workout Dashboard, showing workout durations per day (illustrated underneath by a pie chart breakdown) as well as the pounds lifted per day (illustrated underneath by a doughnut graph):
+
+![dashboard](public/assets/images/dashboard.png)
+
+In addition to its being deployed on Heroku, here is a GIF showing the app's full functionality:
+
+![fitnessApp]()
 
 ## Contact Information
 * Jarrod Bataille
