@@ -38,12 +38,25 @@ router.get("/api/workouts", (req, res) => {
 
 // Pulls all workouts and makes charts
 router.get("/api/workouts/range", (req, res) => {
-  Workout.find({}).limit(7);
+  Workout.find({})
+    .limit(7)
+    .then(dbWorkout => {
+      res.json(dbWorkout);
+    })
+    .catch(err => {
+      res.status(400).json(err);
+    });
 });
 
 // Finds workout and deletes it
-router.delete("/api/workouts", ({ body }, res) => {
-  Workout.findByIdAndDelete(body.id);
-});
+// router.delete("/api/workouts", ({ body }, res) => {
+//   Workout.findByIdAndDelete(body.id)
+//     .then(dbWorkout => {
+//       res.json(dbWorkout);
+//     })
+//     .catch(err => {
+//       res.status(400).json(err);
+//     });
+// });
 
 module.exports = router;
