@@ -54,7 +54,7 @@ After entering a few exercises, users may choose to select the **Dashboard** opt
 
 In addition to its being deployed on Heroku, here is a GIF showing the app's full functionality:
 
-![fitnessApp]()
+![Fitness Tracker](public/assets/gif/fullApp.gif)
 
 ## Contact Information
 * Jarrod Bataille

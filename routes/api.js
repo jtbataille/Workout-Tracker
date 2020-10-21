@@ -48,15 +48,4 @@ router.get("/api/workouts/range", (req, res) => {
     });
 });
 
-// Finds workout and deletes it
-// router.delete("/api/workouts", ({ body }, res) => {
-//   Workout.findByIdAndDelete(body.id)
-//     .then(dbWorkout => {
-//       res.json(dbWorkout);
-//     })
-//     .catch(err => {
-//       res.status(400).json(err);
-//     });
-// });
-
 module.exports = router;
