@@ -32,9 +32,13 @@ If following these commands, users should open their own browsers and go the fol
 HTML, CSS, JavaScript, Node.js, Express.js, MongoDB, Mongoose, Morgan
 
 ## Application Demo
-When starting the application for the first time, users will see a screen without any workout information; however, when users create a workout with various exercises, they will see a screen allowing them to view stats from their last workout and the options to either *"Continue Workout"* by adding more exercises to their last workout or *"New Workout"* to begin a completely new workout:
+When starting the application for the first time, users will see a screen without any workout information, prompting users with the sole option to create a new workout:
 
-![startpage](public/assets/images/startpage.png)
+![initialpage](public/assets/images/initialPage.png)
+
+However, when users create a workout with various exercises, they will see a screen allowing them to view stats from their last workout and the options to either *"Continue Workout"* by adding more exercises to their last workout or *"New Workout"* to begin a completely new workout:
+
+![startpage](public/assets/images/startPage.png)
 
 If users click *"Continue Workout,"* they will be taken to a page to add an exercise to their workout--either resistance or cardio--with the specifications they choose for each. Clicking *"Complete"* will take the users back to the homepage; clicking *"Add Exercise"* will allow users to continue adding to the same workout:
 
